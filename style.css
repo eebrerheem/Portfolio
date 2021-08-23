@@ -1,7 +1,84 @@
-html,body{
+html, body{
     margin: 0;
-     box-sizing: border-box;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: rgb(231, 182, 91);
 }
+
+.card{
+    font-family: "Candara", sans-serif;
+    width: 340px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0.2, 0.4, 0.6, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image img{
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.profile-image img{
+    z-index: 1;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 10px solid rgb(172, 199, 51);
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.profile-image img:hover{
+    transform: scale(1.1);
+}
+
+.card-content h3{
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+.card-content p{
+    font-size: 16px;
+    text-align: justify;
+    padding: 0 20px 5px 20px;
+}
+
+.icons{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(247, 19, 49);
+    padding: 0 14px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.icons a:hover{
+    color: black;
+    transform: scale(1.5);
+}
+
+
 .navigation{
     position: fixed;
     background-color: black;
@@ -11,146 +88,21 @@ html,body{
     align-items: center;
     justify-content: center;
 }
+
 .navigation div{
     margin: 0 25px;
     color: white;
 }
+
 .navigation div a{
     text-decoration: none;
     color: white;
-
-}
-.introduction{
-    height: 100vh;
-    background-color: #2f2f2f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.avatar{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
-.introduction{
-    font-size: 1.2em;
-    color: #ffffff;
-}
-
-.contact {
-    position: relative;
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    justify-items: flex-start;
-}
-.contact-form {
-    position: relative;
-    background: #f9f9f9;
-    width: calc(100% - 400px);
-    padding: 60px 40px 20px;
-
-}
-.contact-form form {
-    width: 100%;
-}
-
-.contact-form .row {
-    width: 100%;
-    display: flex;
-    margin: 5px 10px;
-
-}
-.contact-form .fullinput {
-    width: 100%;
-    margin: 0 30px;
-}
-.contact-form .row input,
-.contact-form .row textarea {
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    color: #111;
-    background: transparent;
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 10px 0;
-    resize: none;
-}
-
-.contact-form .row textarea {
-    height: 120px;
-}
-
-.contact-form .row input[type='submit'] {
-    background-color: var(--primary-color);
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border: 0;
-    margin: 0;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-.contact-info {
-    width: 350px;
-    background: #f9f9f9;
-    padding: 50px 40px 50px;
-
-}
-.contact-info .info-box {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 40px;
-}
-
-.contact-info .info-box .contact-icon {
-    width: 20px;
-    margin-right: 40px;
-
-}
-.contact-info .info-box .details a {
-    color: #111;
-}
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.project {
-    flex: 50%;
-    max-width: 100%;
-    text-align: center;
-}
-
-.project p {
-    margin: 0 10px;
-
-}
-
-section {
-    margin: 10px;
-}
-section div {
-    margin-bottom: 15px;
-}
-section div h1, section div p {
-    text-align: center;
-    margin: 0 0;
 }
 
 .skills {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-
 }
 
 .skill {
@@ -158,7 +110,32 @@ section div h1, section div p {
     margin: 15px 10px;
     padding: 0 10px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: rgb(172, 199, 51);;
     box-shadow: 0 4px 8px 0 rgba(0.2, 0.4, 0.6, 0.8);
+    border-radius: 50px;
+}
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texts {
+    text-align: center;
+}
+
+
+
+section {
+    margin: 10px;
+}
+
+section div {
+    margin-bottom: 15px;
+}
+
+section div h1, section div p {
+    text-align: center;
+    margin: 0 0;
 }
