@@ -38,13 +38,17 @@ html,body{
 }
 .contact-form {
     position: relative;
-    background: #f9f9f9;
+    background: transparent;
     width: calc(100% - 400px);
     padding: 60px 40px 20px;
 
 }
 .contact-form form {
-    width: 100%;
+    width: 90%;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: rgb(138, 190, 41);
+    background-color: white;
 }
 
 .contact-form .row {
@@ -76,22 +80,27 @@ html,body{
     height: 120px;
 }
 
-.contact-form .row input[type='submit'] {
+.contact-form .row input[type='Submit'] {
     background-color: var(--primary-color);
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
     border: 0;
     margin: 0;
     font-weight: 400;
     cursor: pointer;
+    align-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-info {
     width: 350px;
     background: #f9f9f9;
-    padding: 50px 40px 50px;
-
+    padding: 15px 5px 25px;
+    border-radius: 50px;
+    border: 3px solid;
+    border-color: rgb(138, 190, 41);
 }
 .contact-info .info-box {
     display: flex;
@@ -133,4 +142,17 @@ section div {
 section div h1, section div p {
     text-align: center;
     margin: 0 0;
+}
+
+button {
+    background-color: blanchedalmond;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnn {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
